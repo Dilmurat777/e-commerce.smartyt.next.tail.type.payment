@@ -1,0 +1,10 @@
+@tailwind base;
+
+@font-face {
+  font-family: 'Urbanist', sans-serif;
+  src: url(../../fonts/urbanist.woff2);
+  font-display: block;
+  font-style: normal;
+	font-family: 300 900;
+	font-stretch: 75% 12%;
+}
