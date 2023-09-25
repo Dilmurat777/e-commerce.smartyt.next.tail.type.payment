@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Products, StateProps } from '../../type';
 import Image from 'next/image';
-import { AiOutlineClose } from 'react-icons/Ai';
+import { AiOutlineClose } from 'react-icons/ai';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { decreaseQuantity, deleteProduct, increaseQuantity } from '@/redux/shoppingSlice';
 import FormattedAmount from './FormattedAmount';
