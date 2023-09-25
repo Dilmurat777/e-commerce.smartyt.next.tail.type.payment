@@ -19,7 +19,7 @@ export interface ItemProps {
 export interface StateProps {
 	shopping: {
 		productData: [];
-		useInfo: {};
+		userInfo: {};
 		orderData: {
 			order: Products[];
 		};

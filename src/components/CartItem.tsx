@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Products, StateProps } from '../../type';
 import Image from 'next/image';
-import { AiOutlineClose } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { decreaseQuantity, deleteProduct, increaseQuantity } from '@/redux/shoppingSlice';
 import FormattedAmount from './FormattedAmount';
@@ -23,7 +23,7 @@ const CartItem = () => {
           <div key={item._id} className='w-full bg-white flex flex-col md:flex-row items-center justify-between gap-4 px-5'>
             <div className='flex items-center gap-x-3 w-full md:w-1/3'>
               <span className='text-lg hover:text-red-600 cursor-pointer duration-200' onClick={() => dispatch(deleteProduct(item._id))}>
-								<AiOutlineClose/>
+								<GrClose/>
 							</span>
               <Image
                 src={item?.image}
